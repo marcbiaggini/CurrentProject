@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <com.rockspoon.rockandui.Components.TopBar
+        android:id="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/initialsetup_margin">
+
+        <ImageView
+            android:id="@+id/initialsetup_login_logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rockspoon_logo"/>
+
+        <TextView
+            android:id="@+id/initialsetup_login_message"
+            style="@style/rsTextBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:text="@string/message_initialsetup_login"/>
+
+        <TextView
+            android:id="@+id/initialsetup_login_emaillabel"
+            style="@style/rsTextBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"/>
+
+        <EditText
+            android:id="@+id/initialsetup_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="@string/text_enter_your_email"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/textsize_big"/>
+
+        <TextView
+            android:id="@+id/initialsetup_login_passwordlabel"
+            style="@style/rsTextBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"/>
+
+        <EditText
+            android:id="@+id/initialsetup_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/text_enter_password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/textsize_big"/>
+
+        <Button
+            android:id="@+id/initialsetup_login_loginbtn"
+            style="@style/rsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:text="@string/button_login"/>
+    </LinearLayout>
+
+
+</LinearLayout>

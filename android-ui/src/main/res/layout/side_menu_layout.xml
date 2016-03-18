@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="350dp"
+              android:layout_height="match_parent"
+              android:background="@drawable/menu_background"
+              android:orientation="vertical"
+              android:paddingEnd="28dp"
+              android:paddingStart="0dp"
+              android:paddingTop="2dp">
+
+    <ImageView
+        android:id="@+id/menu_logo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/menulogo"/>
+
+    <include
+        android:id="@+id/user_profile_panel"
+        layout="@layout/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="18"
+        android:divider="@drawable/divider_hor"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:showDividers="middle">
+
+
+        <Button
+            android:id="@+id/sidemenu_button_itemavailability"
+            style="@style/rsFlatButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal|end"
+            android:gravity="center_vertical|start"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/button_item_availability"
+            android:textSize="@dimen/textsize_big"/>
+
+        <Button
+            android:id="@+id/sidemenu_button_clockio"
+            style="@style/rsFlatButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:layout_gravity="center_horizontal|end"
+            android:gravity="center_vertical|start"
+            android:text="@string/button_clockinout_break"
+            android:textSize="@dimen/textsize_big"/>
+
+        <Button
+            android:id="@+id/sidemenu_button_myschedules"
+            style="@style/rsFlatButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal|end"
+            android:gravity="center_vertical|start"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/button_my_schedules"
+            android:textSize="@dimen/textsize_big"/>
+
+        <Button
+            android:id="@+id/sidemenu_button_itemphotos"
+            style="@style/rsFlatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|start"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/button_item_photos"
+            android:textSize="@dimen/textsize_big"/>
+
+        <Button
+            android:id="@+id/sidemenu_button_change_password"
+            style="@style/rsFlatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|start"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/change_password"
+            android:textSize="@dimen/textsize_big"/>
+
+        <Button
+            android:id="@+id/sidemenu_button_logout"
+            style="@style/rsFlatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|start"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/button_logout"
+            android:textSize="@dimen/textsize_big"/>
+
+        <Button
+            android:id="@+id/sidemenu_button_about"
+            style="@style/rsFlatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_vertical|start"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/button_about"
+            android:textSize="@dimen/textsize_big"/>
+
+    </LinearLayout>
+
+</LinearLayout>

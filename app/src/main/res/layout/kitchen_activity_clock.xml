@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="com.rockspoon.kitchentablet.UI.ClockScreen.ClockActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/toolbarClock"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kitchen_actionbar_background"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/backRipple"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                app:mrl_rippleDuration="350"
+                app:mrl_rippleFadeDuration="75"
+                app:mrl_rippleRoundedCorners="5dp"
+                >
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    style="@style/rsFlatButton"
+                    android:background="@drawable/kitchen_backarrow"
+                    android:layout_gravity="center"
+                    />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:text="Clock In / Out"
+                    android:textSize="17sp"
+                    />
+
+
+            </RelativeLayout>
+
+            />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/kitchen_content_clock"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

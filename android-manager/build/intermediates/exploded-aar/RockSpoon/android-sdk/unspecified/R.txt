@@ -1,0 +1,2 @@
+int raw ca 0x7f020000
+int raw keycert 0x7f020001

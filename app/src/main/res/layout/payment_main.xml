@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/payment_activity_root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/actionbar_background"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/page_title"
+            style="@style/rsTextEnourmous"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="Payment Table #2"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/order_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="420dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="@string/order_subtotal"/>
+
+                    <TextView
+                        android:id="@+id/order_subtotal"
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="97.00"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="@string/tax"/>
+
+                    <TextView
+                        android:id="@+id/order_tax"
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="8.31"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/bordercolor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="@string/order_total"/>
+
+                    <TextView
+                        android:id="@+id/order_total"
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:gravity="end"
+                        android:textColor="@color/textcolor_lightblue"
+                        android:textStyle="bold"
+                        tools:text="105.31"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <View
+                    android:id="@+id/payment_paybill_separator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/separator_height_big"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/bordercolor"/>
+
+                <TextView
+                    style="@style/rsTextPaymentTablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/textcolor_black"
+                    android:text="@string/button_pay"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    style="@style/rsTextEnourmous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/amount"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/payment"/>
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:text="@string/placeholder_order_total"
+                        android:textColor="@color/textcolor_lightblue"
+                        android:textSize="@dimen/textsize_payment_tablet"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/order_total_amount"
+                        android:text="@string/cash_sign"/>
+
+                    <EditText
+                        android:id="@+id/order_total_amount"
+                        style="@style/rsTextPaymentTablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/border_background_transparent"
+                        android:ellipsize="end"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="50dp"
+                        android:paddingStart="50dp"
+                        android:paddingTop="20dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/textcolor_lightblue"
+                        android:textStyle="bold"
+                        tools:text="105.31"/>
+
+                    <TextView
+                        android:id="@+id/order_total_amount_error_text"
+                        style="@style/rsErrorText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/order_total_amount"
+                        android:gravity="center_horizontal"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bordercolor"/>
+
+                <LinearLayout
+                    android:id="@+id/cash_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_button"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/rsTextEnourmous"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/cash"
+                        android:textColor="@color/textcolor_lightblue"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="80dp"
+                        android:paddingBottom="28dp"
+                        android:paddingTop="28dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bordercolor"/>
+
+                <LinearLayout
+                    android:id="@+id/credit_card_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_button"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/rsTextEnourmous"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/credit_card"
+                        android:textColor="@color/textcolor_lightblue"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="80dp"
+                        android:paddingBottom="28dp"
+                        android:paddingTop="28dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bordercolor"/>
+
+                <LinearLayout
+                    android:id="@+id/debit_card_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_button"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/rsTextEnourmous"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/debit_card"
+                        android:textColor="@color/textcolor_lightblue"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="80dp"
+                        android:paddingBottom="28dp"
+                        android:paddingTop="28dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bordercolor"/>
+
+                <LinearLayout
+                    android:id="@+id/rockspoon_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_button"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/rsTextEnourmous"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/rockspoon_app"
+                        android:textColor="@color/textcolor_lightblue"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="80dp"
+                        android:paddingBottom="28dp"
+                        android:paddingTop="28dp"
+                        android:src="@drawable/arrow_right"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/header_container"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bordercolor"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="70dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/table_num_of_seats" />
+
+        <Button
+            android:id="@+id/close_dialog_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_close" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/number_of_seats"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_container"
+        android:background="@color/white"
+        android:padding="5dp" />
+</RelativeLayout>

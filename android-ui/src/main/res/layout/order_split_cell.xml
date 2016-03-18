@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:layout_marginBottom="2dp"
+              android:layout_marginTop="2dp"
+              android:background="@drawable/border_background"
+              android:divider="@drawable/divider_vert"
+              android:dividerPadding="8dp"
+              android:orientation="horizontal"
+              android:showDividers="middle"
+              android:weightSum="2">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/order_select_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:text="Select All"
+            android:paddingLeft="4dp"
+            android:textColor="#C8C8C8"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/order_menu_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/arrow_right"
+        android:paddingRight="16dp"
+        android:stateListAnimator="@null"
+        android:text="Menu 1"
+        android:textAllCaps="false"
+        android:textColor="#0FAACC"/>
+
+</LinearLayout>

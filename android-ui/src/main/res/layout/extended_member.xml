@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/rsBottomTopDialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/gray">
+
+        <TextView
+            android:id="@+id/extended_member_title"
+            style="@style/rsTextEnourmous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/format_seat_n"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/extended_member_closebtn"
+            style="@style/rsFlatButton"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:text="@string/button_close"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <com.rockspoon.rockandui.Components.RoundImageView
+                android:id="@+id/extended_member_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/thumbnail"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|start"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/extended_member_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:text="@string/placeholder_login_username"
+                    android:textColor="@color/textcolor"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <RatingBar
+                    android:id="@+id/extended_member_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/rsratingbar"
+                    android:rating="3.5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/customer_since"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/extended_member_since"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/placeholder_customer_since"/>
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:padding="2dp"
+                android:text="@string/total_spent_here"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/extended_member_lifetimerev"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/placeholder_total_spent_here"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView24"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/average_ticket"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/extended_member_average_ticket"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/placeholder_average_ticket"/>
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:padding="2dp"
+                android:text="@string/average_time_spent_her"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/extended_member_time_spent"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/placeholder_average_time_spent_here"
+                android:textColor="@color/textcolor"/>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/restriction_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <include
+            layout="@layout/like_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <include
+            layout="@layout/dislike_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>

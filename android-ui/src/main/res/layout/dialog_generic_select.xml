@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_topbar_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dialog_topbar_margin_bottom"
+        android:background="@color/gray">
+
+        <TextView
+            android:id="@+id/dialog_generic_select_title"
+            style="@style/rsTextEnourmous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/message_please_wait" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder_lorem_ipsum"
+        android:id="@+id/dialog_generic_select_message"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        style="@style/rsText"
+        android:visibility="visible"
+        android:layout_marginBottom="5dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_generic_select_list"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

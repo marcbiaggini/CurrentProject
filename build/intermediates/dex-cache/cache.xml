@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/juancamilovilladuarte/Documents/RockSpoon/app/build/intermediates/exploded-aar/RockSpoon/android-sdk/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="dd814c252ad33a5864f15cdceb5ba6cbf74db4c3">
+        <dex dex="/Users/juancamilovilladuarte/Documents/RockSpoon/app/build/intermediates/pre-dexed/debug/RockSpoon-android-sdk-unspecified_507103ffa3eabc2fb654c8bb1d16b778d2a369a1.jar" />
+    </item>
+
+</items>

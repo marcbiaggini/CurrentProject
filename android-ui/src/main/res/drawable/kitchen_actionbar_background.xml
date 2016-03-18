@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <gradient
+        android:angle="-90"
+        android:startColor="@color/background_tab_pressed"
+        android:centerX="0.47"
+        android:centerColor="@color/textcolor_lightblue_disabled"
+        android:endColor="@color/button_selected"
+        android:type="linear"/>
+</shape>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cachedhttp_cache_size" type="integer">50</item>
+    <!-- MB -->
+</resources>

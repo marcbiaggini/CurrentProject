@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/modifier_item_item_height"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="@dimen/modifier_item_item_padding">
+
+    <ImageButton
+        android:id="@+id/modifier_item_quantity_minus"
+        style="@style/rsFlatButton"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:src="@drawable/minus"/>
+
+    <TextView
+        android:id="@+id/modifier_item_quantity_quantity"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <ImageButton
+        android:id="@+id/modifier_item_quantity_plus"
+        style="@style/rsFlatButton"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:src="@drawable/plus"/>
+
+    <TextView
+        android:id="@+id/modifier_item_quantity_name"
+        style="@style/rsTextBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="12dp"
+        android:scrollHorizontally="true"
+        android:text="@string/placeholder_modifier_item_quantity_name"/>
+
+    <TextView
+        android:id="@+id/modifier_item_quantity_price"
+        style="@style/rsTextBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:maxLines="1"
+        android:maxWidth="80dp"
+        android:minWidth="48dp"
+        android:scrollHorizontally="true"
+        android:text="0.00"
+        android:visibility="gone"/>
+
+</LinearLayout>

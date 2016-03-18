@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/intl_phone"
+        android:padding="5dp">
+
+        <Spinner
+            android:id="@+id/intl_phone_country"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            tools:listitem="@layout/flag_view_select_hold"
+            />
+
+        <EditText
+            android:id="@+id/intl_phone_area_code"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            android:textSize="@dimen/textsize_big"
+            android:gravity="right"/>
+
+        <EditText
+            android:id="@+id/intl_phone_phone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="@dimen/textsize_big"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/intl_phone_view"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/intl_phone_country_view"
+            android:src="@drawable/country_us"
+            android:paddingEnd="10dp"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/intl_phone_areacode_hint"
+            android:id="@+id/intl_phone_area_code_view"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/textsize_big"
+            android:gravity="right"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/intl_phone_phone_hint"
+            android:id="@+id/intl_phone_phone_view"
+            android:textSize="@dimen/textsize_big"
+            android:gravity="left"
+            android:paddingStart="4dp"/>
+    </LinearLayout>
+</LinearLayout>

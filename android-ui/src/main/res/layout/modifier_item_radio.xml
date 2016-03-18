@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/modifier_item_item_height"
+             android:padding="@dimen/modifier_item_item_padding">
+
+    <RadioButton
+        android:id="@+id/modifier_item_radio_text"
+        style="@style/rsTextBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:text="Default" />
+
+    <TextView
+        android:id="@+id/modifier_item_radio_price"
+        style="@style/rsTextBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="center_vertical|end"
+        android:minWidth="80dp" />
+
+    <!--<View-->
+    <!--android:id="@+id/modifier_item_radio_separator"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="@color/bordercolor"/>-->
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/pos_base_bottom_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rockandui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:background="@drawable/background_shadow"
+    android:elevation="4dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/pos_base_button_open_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:src="@drawable/menu"/>
+
+    <View
+        android:id="@+id/lineseparator"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/bordercolor"/>
+
+    <com.rockspoon.rockandui.Components.BadgeIcon
+        android:id="@+id/icon1"
+        android:layout_width="@dimen/badge_icon_size"
+        android:layout_height="@dimen/badge_icon_size"
+        android:layout_weight="1"
+        android:gravity="center"
+        rockandui:count="1"
+        rockandui:imageSrc="@drawable/menu_icon_contact"/>
+
+    <com.rockspoon.rockandui.Components.BadgeIcon
+        android:id="@+id/icon2"
+        android:layout_width="@dimen/badge_icon_size"
+        android:layout_height="@dimen/badge_icon_size"
+        android:layout_weight="1"
+        android:gravity="center"
+        rockandui:count="0"
+        rockandui:imageSrc="@drawable/menu_icon_messages"/>
+
+    <com.rockspoon.rockandui.Components.BadgeIcon
+        android:id="@+id/icon3"
+        android:layout_width="@dimen/badge_icon_size"
+        android:layout_height="@dimen/badge_icon_size"
+        android:layout_weight="1"
+        android:gravity="center"
+        rockandui:count="99"
+        rockandui:imageSrc="@drawable/menu_icon_dish"/>
+
+    <com.rockspoon.rockandui.Components.BadgeIcon
+        android:id="@+id/icon4"
+        android:layout_width="@dimen/badge_icon_size"
+        android:layout_height="@dimen/badge_icon_size"
+        android:layout_weight="1"
+        android:gravity="center"
+        rockandui:count="9"
+        rockandui:imageSrc="@drawable/menu_icon_delivery"/>
+
+    <com.rockspoon.rockandui.Components.BadgeIcon
+        android:id="@+id/icon5"
+        android:layout_width="@dimen/badge_icon_size"
+        android:layout_height="@dimen/badge_icon_size"
+        android:layout_weight="1"
+        android:gravity="center"
+        rockandui:count="5"
+        rockandui:imageSrc="@drawable/menu_icon_box"/>
+</LinearLayout>

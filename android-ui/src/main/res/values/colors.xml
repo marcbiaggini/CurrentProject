@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="background" type="color">#FFFFFFFF</item>
+    <item name="background_transparent" type="color">#55EEEEEE</item>
+    <item name="bordercolor" type="color">#D8D8D8</item>
+    <item name="white" type="color">#FFFFFFFF</item>
+    <item name="table_head_bg" type="color">#FF474747</item>
+    <item name="subaction_bar" type="color">#FF5ABED6</item>
+    <item name="gray" type="color">#FFEDEDED</item>
+    <item name="black_overlay" type="color">#88000000</item>
+    <item name="background_disabled" type="color">#88FFFFFF</item>
+    <item name="bordercolor_black" type="color">#000000</item>
+    <item name="button_disabled" type="color">#aaaaaa</item>
+
+    <!-- Text Colors -->
+    <item name="textcolor_enabled" type="color">#FF6D6D6D</item>
+    <item name="textcolor_disabled" type="color">#886D6D6D</item>
+
+    <item name="textcolor_lightgray" type="color">#C1BEC1</item>
+
+    <item name="textcolor_lightblue_enabled" type="color">#FF00A9CE</item>
+    <item name="textcolor_lightblue_disabled" type="color">#8800A9CE</item>
+
+    <item name="textcolor_red_enabled" type="color">#FFEE0000</item>
+    <item name="textcolor_red_disabled" type="color">#88EE0000</item>
+
+    <item name="textcolor_orange_enabled" type="color">#FFFF6C00</item>
+    <item name="textcolor_orange_disabled" type="color">#88FF6C00</item>
+
+    <item name="textcolor_black_enabled" type="color">#FF000000</item>
+    <item name="textcolor_black_disabled" type="color">#88000000</item>
+
+    <item name="textcolor_gray_enabled" type="color">#FFCDCDCD</item>
+    <item name="textcolor_gray_disabled" type="color">#88CDCDCD</item>
+
+    <item name="textcolor_greenprice_enabled" type="color">#FF008000</item>
+    <item name="textcolor_greenprice_disabled" type="color">#88008000</item>
+
+    <!-- RockSpoon Button Colors -->
+    <item name="button_normal" type="color">#FFFFFFFF</item>
+    <!--<item name="button_selected" type="color">#FFDDDDDD</item> -->
+    <item name="button_selected" type="color">#FF00A9CE</item>
+    <item name="button_selected_transparent" type="color">#7300a9ce</item>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <item name="toggle_button_normal" type="color">#FFFFFFFF</item>
+    <item name="toggle_button_selected" type="color">#FF00A9CE</item>
+    <item name="toggle_button_text_normal" type="color">#FF00A9CE</item>
+    <item name="toggle_button_text_selected" type="color">#FFFFFFFF</item>
+
+    <item name="transparent_button_normal" type="color">#00EEEEEE</item>
+    <item name="transparent_button_selected" type="color">#FFEEEEEE</item>
+
+    <!-- RockSpoon Gradient Colors -->
+    <item name="rsgradient_red" type="color">#FFFC1D06</item>
+    <item name="rsgradient_magenta" type="color">#FFEC2A53</item>
+    <item name="rsgradient_red_dark" type="color">#FFD42716</item>
+
+    <!-- Sweep Circular Progress Colors -->
+    <item name="sweep_circular_progress_start" type="color">#FFB2F107</item>
+    <item name="sweep_circular_progress_end" type="color">#FFFF3600</item>
+
+    <!-- Timeline Colors -->
+    <item name="timeline_running" type="color">#FF28CE00</item>
+    <item name="timeline_paused" type="color">#FFAAAFAB</item>
+    <item name="timeline_paused2" type="color">#FFB400</item>
+
+    <!-- Clock I/O Round Button -->
+    <item name="round_clockio_button_gradientstart" type="color">#FFFFFFFF</item>
+    <item name="round_clockio_button_gradientend" type="color">#FFE9E9E9</item>
+    <item name="round_clockio_button_selected" type="color">#FFF1F1F1</item>
+
+    <color name="colorAccent">#FF4081</color>
+    <item name="kitchen_background" type="color">#E0E3E7</item>
+    <item name="kitchen_done_list_background" type="color">#F0EEF0</item>
+    <item name="textcolor_white_disabled" type="color">#55FFFFFF</item>
+
+
+</resources>

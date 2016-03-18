@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rockspoon.rockandui.Components.RatioRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/food_item_circle"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/food_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:maxWidth="56dp"
+        android:padding="2dp"
+        android:text="@string/placeholder_item_name"
+        android:textColor="#0FAACC"
+        android:textIsSelectable="false"
+        android:textSize="13sp"/>
+
+</com.rockspoon.rockandui.Components.RatioRelativeLayout>

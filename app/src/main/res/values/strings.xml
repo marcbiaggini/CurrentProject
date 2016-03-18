@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Rockspoon POS</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_layout">LayoutActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_ordering">OrderingActivity</string>
+    <string name="rockspoon_app">RockSpoon App</string>
+
+    <string name="notification_title">RockManager</string>
+    <string name="notification_text">RockManager Service is running</string>
+
+    <string name="dine_in">Deni-in</string>
+    <string name="delivery">Delivery</string>
+    <string name="takeout">Takeout</string>
+    <string name="reservations">Reservations</string>
+    <string name="floor_plan">Floor Plan</string>
+    <string name="choose_best_filter">Choose the best filter</string>
+    <string name="deleting_combinations">Deleting Combinations</string>
+    <string name="do_you_want_delete_tab">Do you want to Delete the \'%s\' tab?</string>
+    <string name="are_you_sure_you_want">Are you sure you want to remove this floor plan?</string>
+    <string name="section_placeholder">%d section</string>
+    <string name="draft">(Draft)</string>
+    <string name="published">(Published)</string>
+    <string name="enter_new_name">Enter new Name for the Section</string>
+    <string name="name">Name</string>
+    <string name="tables">Tables</string>
+    <string name="table_combinations">Table Combinations</string>
+    <string name="retake">Retake</string>
+    <string name="use_photo">Use Photo</string>
+</resources>

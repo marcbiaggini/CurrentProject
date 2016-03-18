@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:layout_gravity="fill_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/border_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Create Item"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#474747"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Enter item description"
+            android:textSize="13sp"
+            android:textColor="#474747"/>
+
+        <EditText
+            android:id="@+id/manual_entry_desc_input"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/border_background"
+            android:gravity="top"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:textColor="#474747"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Price $"
+                android:textSize="13sp"
+                android:textColor="#474747"/>
+
+            <EditText
+                android:id="@+id/manual_entry_price_input"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_background"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:text="0.00"
+                android:textColor="@color/textcolor_lightblue_enabled"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/manual_entry_order_and_continue"
+            style="@style/rsButtonInverted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:enabled="false"
+            android:text="Add to Order &amp; Continue"/>
+
+        <Button
+            android:id="@+id/manual_entry_order"
+            style="@style/rsButtonInverted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:enabled="false"
+            android:text="Add to Order"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

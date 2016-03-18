@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/badgeIconImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="left"
+        android:clickable="true"
+        android:src="@drawable/menu_icon_contact"/>
+
+    <com.rockspoon.rockandui.Components.BadgeTextView
+        android:id="@+id/badgeCount"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="22dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/placeholder_badge_count"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+</merge>

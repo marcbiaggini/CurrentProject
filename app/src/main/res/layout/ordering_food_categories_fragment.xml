@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:animateLayoutChanges="true"
+              android:orientation="vertical">
+
+    <com.rockspoon.rockandui.Components.TopBar
+        android:id="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbarActionEnabled="true">
+
+        <ImageView
+            android:id="@+id/view_mode_button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="32dp"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/vec_thumb_view"/>
+
+    </com.rockspoon.rockandui.Components.TopBar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/ordering_category_bar"
+        style="@style/CategoriesTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/food_category_tab"
+        android:overScrollMode="never"
+        app:tabMode="scrollable"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ordering_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:background="#F2F2F2"/>
+
+</LinearLayout>

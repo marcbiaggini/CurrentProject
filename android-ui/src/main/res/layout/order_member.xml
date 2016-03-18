@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="96dp"
+             android:layout_marginBottom="2dp"
+             android:layout_marginTop="2dp"
+             android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="48dp"
+        android:background="@drawable/border_background"
+        android:paddingBottom="8dp"
+        android:paddingLeft="56dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/order_member_number"
+            style="@style/rsTextBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/format_number_n"
+            android:textSize="16sp"/>
+
+        <RatingBar
+            android:id="@+id/order_member_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignTop="@+id/order_member_name"
+            android:layout_toStartOf="@+id/order_member_button"
+            android:numStars="5"
+            android:paddingTop="2.5dp"
+            android:progressDrawable="@drawable/rsratingbar_small"
+            android:rating="0"/>
+
+        <TextView
+            android:id="@+id/order_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/order_member_number"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/order_member_number"
+            android:layout_toLeftOf="@+id/order_member_rating"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollHorizontally="true"
+            android:maxLines="1"
+            android:text="@string/placeholder_login_username"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/order_member_button"
+            android:layout_width="32dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|end"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/arrow_right"/>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/order_member_number"
+            android:layout_marginTop="4dp"
+            android:text="@string/customer_since"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/order_member_since"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView27"
+            android:layout_toEndOf="@+id/textView27"
+            android:paddingLeft="4dp"
+            android:text="@string/placeholder_customer_since"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/textsize"/>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView27"
+            android:layout_below="@+id/textView27"
+            android:layout_marginTop="2dp"
+            android:text="@string/total_spent_here"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/order_member_lifetimerev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView30"
+            android:layout_toEndOf="@+id/textView30"
+            android:paddingLeft="4dp"
+            android:text="@string/placeholder_total_spent_here"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/textsize"/>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView30"
+            android:layout_marginTop="2dp"
+            android:text="@string/average_ticket"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/order_member_avgticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView33"
+            android:layout_toEndOf="@+id/textView33"
+            android:paddingLeft="4dp"
+            android:text="@string/placeholder_average_ticket"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/textsize"/>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView27"
+            android:layout_toEndOf="@+id/order_member_since"
+            android:paddingLeft="8dp"
+            android:text="@string/average_time_spent_her"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/order_member_avgtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView27"
+            android:layout_toEndOf="@+id/textView35"
+            android:paddingLeft="4dp"
+            android:text="@string/placeholder_average_time_spent_here"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/textsize"/>
+    </RelativeLayout>
+
+    <com.rockspoon.rockandui.Components.RoundImageView
+        android:id="@+id/order_member_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_vertical|left"
+        android:scaleType="fitCenter"
+        android:src="@drawable/thumbnail"/>
+
+</FrameLayout>

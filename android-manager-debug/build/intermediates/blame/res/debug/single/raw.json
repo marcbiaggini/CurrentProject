@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/juancamilovilladuarte/Documents/RockSpoon/android-manager-debug/build/intermediates/res/merged/debug/raw/ca.jks",
+        "source": "/Users/juancamilovilladuarte/Documents/RockSpoon/android-manager-debug/build/intermediates/exploded-aar/RockSpoon/android-sdk/unspecified/res/raw/ca.jks"
+    },
+    {
+        "merged": "/Users/juancamilovilladuarte/Documents/RockSpoon/android-manager-debug/build/intermediates/res/merged/debug/raw/keycert.p12",
+        "source": "/Users/juancamilovilladuarte/Documents/RockSpoon/android-manager-debug/build/intermediates/exploded-aar/RockSpoon/android-sdk/unspecified/res/raw/keycert.p12"
+    }
+]

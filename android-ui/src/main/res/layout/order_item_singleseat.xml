@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="100dp"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp">
+
+    <com.rockspoon.rockandui.Components.RoundImageView
+        android:id="@+id/order_item_image0"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/thumbnail" />
+
+    <TextView
+        android:id="@+id/order_item_seatn"
+        style="@style/rsTextBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/order_item_image0"
+        android:text="@string/format_seat_n" />
+
+    <TextView
+        android:id="@+id/order_item_name0"
+        style="@style/rsTextBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/order_item_seatn"
+        android:layout_below="@+id/order_item_seatn"
+        android:text="@string/placeholder_login_username"
+        android:textStyle="bold" />
+
+    <com.rockspoon.rockandui.Components.LinearListView
+        android:id="@+id/order_item_itemlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_item_image0"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

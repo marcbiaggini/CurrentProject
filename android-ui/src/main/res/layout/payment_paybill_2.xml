@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:columnCount="4"
+        android:rowCount="2">
+
+        <ToggleButton
+            android:id="@+id/payment_paybill_2_cash10btn"
+            style="@style/rsToggleButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="0"
+            android:layout_margin="7dp"
+            android:layout_row="0"
+            android:text="@string/cash_10"
+            android:textOff="@string/cash_10"
+            android:textOn="@string/cash_10" />
+
+        <ToggleButton
+            android:id="@+id/payment_paybill_2_cash20btn"
+            style="@style/rsToggleButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="1"
+            android:layout_margin="7dp"
+            android:layout_row="0"
+            android:textOff="@string/cash_20"
+            android:textOn="@string/cash_20" />
+
+        <ToggleButton
+            android:id="@+id/payment_paybill_2_cash30btn"
+            style="@style/rsToggleButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="2"
+            android:layout_margin="7dp"
+            android:layout_row="0"
+            android:textOff="@string/cash_30"
+            android:textOn="@string/cash_30" />
+
+        <ToggleButton
+            android:id="@+id/payment_paybill_2_cash50btn"
+            style="@style/rsToggleButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="3"
+            android:layout_margin="7dp"
+            android:layout_row="0"
+            android:textOff="@string/cash_50"
+            android:textOn="@string/cash_50" />
+
+        <ToggleButton
+            android:id="@+id/payment_paybill_2_cash70btn"
+            style="@style/rsToggleButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="0"
+            android:layout_margin="7dp"
+            android:layout_row="1"
+            android:textOff="@string/cash_70"
+            android:textOn="@string/cash_70" />
+
+        <ToggleButton
+            android:id="@+id/payment_paybill_2_cash100btn"
+            style="@style/rsToggleButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="1"
+            android:layout_margin="7dp"
+            android:layout_row="1"
+            android:textOff="@string/cash_100"
+            android:textOn="@string/cash_100" />
+
+        <ToggleButton
+            android:id="@+id/payment_paybill_2_cash120btn"
+            style="@style/rsToggleButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="2"
+            android:layout_margin="7dp"
+            android:layout_row="1"
+            android:textOff="@string/cash_120"
+            android:textOn="@string/cash_120" />
+
+        <ToggleButton
+            android:id="@+id/payment_paybill_2_cash150btn"
+            style="@style/rsToggleButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="3"
+            android:layout_margin="7dp"
+            android:layout_row="1"
+            android:textOff="@string/cash_150"
+            android:textOn="@string/cash_150" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/payment_paybill_2_custombtn"
+            style="@style/rsTextEnourmous"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/textcolor_lightblue"
+            android:gravity="center"
+            android:text="@string/custom"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView25"
+                style="@style/rsTextEnourmous"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cash_sign" />
+
+            <TextView
+                android:id="@+id/payment_paybill_2_cashvalue"
+                style="@style/rsTextEnourmous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_cash_paid"
+                android:textColor="@color/textcolor_lightblue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/rsTextBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/order_total" />
+
+            <TextView
+                android:id="@+id/payment_paybill_2_order_total"
+                style="@style/rsTextBig"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/placeholder_order_subtotal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/rsTextBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/cash_paid" />
+
+            <TextView
+                android:id="@+id/payment_paybill_2_cashpaid"
+                style="@style/rsTextBig"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/placeholder_cash_paid" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/payment_paybill_separator1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bordercolor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/rsTextEnourmous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/your_change_is" />
+
+            <TextView
+                android:id="@+id/payment_paybill_2_change"
+                style="@style/rsTextEnourmous"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/placeholder_change"
+                android:textColor="@color/textcolor_red"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

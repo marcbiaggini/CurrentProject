@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <com.rockspoon.rockandui.Components.TopBar
+        android:id="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"/>
+
+    <com.rockspoon.rockandui.Components.Timeline
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/clockinout_main_timeline"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:text="@string/message_clocked_in"
+        android:id="@+id/clockinout_main_clockmessage"
+        style="@style/rsText"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/clockinout_main_playpausebtn"
+            android:background="@drawable/round_clockio_button"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_action_play"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/clockinout_main_stopbtn"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_clockio_button"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_action_stop"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_goto_main_menu"
+        android:id="@+id/clockinout_main_goto_main_menubtn"
+        android:visibility="visible"
+        style="@style/rsButtonInverted"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+.gradle
+build
+*.un~
+/bin/
+.classpath
+.project
+.settings
+.generated
+.factorypath
+logs
+myDb.db

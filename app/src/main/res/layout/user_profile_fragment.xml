@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/UserProfileFrag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.rockspoon.rockandui.Components.TopBar
+        android:id="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.widget.ImageView
+            android:id="@+id/user_profile_userImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/thumbnail"/>
+
+        <LinearLayout
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_profile_firstName_txt"
+                style="@style/rsLabelEnourmous"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/placeholder_profile_name"/>
+
+            <EditText
+                android:id="@+id/user_profile_firstName_input"
+                style="@style/rsInputTexEnourmous"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/placeholder_profile_name"/>
+
+            <TextView
+                android:id="@+id/user_profile_lastName_txt"
+                style="@style/rsLabelEnourmous"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/placeholder_profile_lastname"/>
+
+            <EditText
+                android:id="@+id/user_profile_lastName_input"
+                style="@style/rsInputTexEnourmous"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/placeholder_profile_lastname"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_profile_userEmail_label"
+        style="@style/rsLabelEnourmous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/email"/>
+
+    <TextView
+        android:id="@+id/user_profile_userEmail_txt"
+        style="@style/rsTextEnourmous"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/placeholder_user_email"/>
+
+    <EditText
+        android:id="@+id/user_profile_userEmail_input"
+        style="@style/rsInputTexEnourmous"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/user_profile_userMobile_label"
+        style="@style/rsLabelEnourmous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_row="5"
+        android:text="@string/mobile"/>
+
+    <com.rockspoon.rockandui.Components.InternationalPhoneEdit_
+        android:id="@+id/user_profile_userMobile_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/user_profile_save"
+        style="@style/rsButtonInverted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:singleLine="false"
+        android:text="@string/button_save"/>
+
+    <Button
+        android:id="@+id/user_profile_cancel"
+        style="@style/rsButtonInverted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:singleLine="false"
+        android:text="@string/button_cancel"/>
+
+</LinearLayout>

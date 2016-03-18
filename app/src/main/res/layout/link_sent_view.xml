@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="70dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="70dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/rockspoon_logo"/>
+
+    <TextView
+        android:id="@+id/link_sent_label"
+        style="@style/rsTextPaymentTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/text_message_sent"
+        android:textColor="@color/textcolor_black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/link_address_label"
+        style="@style/rsTextEnourmous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="XXX XXXXXXX"
+        android:textColor="@color/textcolor"/>
+
+    <Button
+        android:id="@+id/send_link_done"
+        style="@style/rsButtonInverted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/button_done"
+        android:textSize="@dimen/textsize_payment_tablet"/>
+
+</LinearLayout>

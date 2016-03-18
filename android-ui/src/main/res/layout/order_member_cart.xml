@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="2dp"
+              android:layout_marginTop="2dp"
+              android:background="@drawable/border_background"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp">
+
+        <com.rockspoon.rockandui.Components.RoundImageView
+            android:id="@+id/customer_avatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/thumbnail"/>
+
+        <TextView
+            android:id="@+id/customer_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="64dp"
+            android:text="Seat #1"/>
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:scrollHorizontally="true"
+            android:text="Janeth Smith"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+
+    <com.rockspoon.rockandui.Components.OrderedItemsView
+        android:id="@+id/customer_ordered_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.rockspoon.rockandui.Components.RoundImageView
+        android:id="@+id/facename_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:src="@drawable/thumbnail"/>
+
+    <TextView
+        android:id="@+id/facename_text"
+        style="rsText"
+        android:textColor="@color/textcolor_lightblue_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLength="10"
+        android:text="@string/format_seat_n"/>
+</merge>

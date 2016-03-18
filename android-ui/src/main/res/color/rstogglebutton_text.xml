@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/textcolor_lightblue_disabled" android:state_enabled="false"/>
+    <item android:color="@color/toggle_button_text_selected" android:state_checked="true" android:state_enabled="true"/>
+    <!-- Default State -->
+    <item android:color="@color/toggle_button_text_normal" android:state_checked="false" android:state_enabled="true"/>
+</selector>

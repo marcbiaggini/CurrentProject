@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/payer_number"
+        style="@style/rsLabelBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/textsize_large"/>
+
+    <TextView
+        style="@style/rsLabelBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/pay_amount"
+        android:text="@string/cash_sign"
+        android:textSize="@dimen/textsize_large"/>
+
+    <EditText
+        android:id="@+id/pay_amount"
+        style="@style/rsTextLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_background_transparent"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxWidth="350dp"
+        android:minWidth="120dp"
+        android:textColor="@color/textcolor_lightblue"/>
+
+    <Button
+        android:id="@+id/pay_button"
+        style="@style/rsButtonInverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/button_pay"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textsize_large"/>
+
+    <TextView
+        android:id="@+id/label_paid"
+        style="@style/rsLabelBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/paid"
+        android:textColor="@color/textcolor_greenprice"
+        android:textSize="@dimen/textsize_large"
+        android:visibility="gone"/>
+
+</RelativeLayout>

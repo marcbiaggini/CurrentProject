@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/baseRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.rockspoon.rockandui.Components.TopBar
+        android:id="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        app:topbarTitleEnabled="false"
+        app:topbarBackEnabled="false">
+
+        <ImageView
+            android:id="@+id/rs_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:src="@drawable/rockspoon_logo_white"/>
+
+    </com.rockspoon.rockandui.Components.TopBar>
+
+    <ListView
+        android:id="@+id/login_users"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:drawSelectorOnTop="true"
+        tools:listitem="@layout/login_user"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

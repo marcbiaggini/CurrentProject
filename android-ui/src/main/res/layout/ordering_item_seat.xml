@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rockandui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- TODO: Better way to put the icon on the side of the text on button below -->
+    <ToggleButton
+        android:id="@+id/ordering_item_seat_allseatsbtn"
+        style="@style/rsToggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:checked="false"
+        android:drawablePadding="-120dp"
+        android:drawableStart="@drawable/tableicon"
+        android:paddingEnd="0dp"
+        android:paddingStart="115dp"
+        android:textOff="@string/button_all_seats"
+        android:textOn="@string/button_all_seats" />
+
+    <com.rockspoon.rockandui.Components.LinearGridView
+        android:id="@+id/ordering_item_seat_itemgrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        rockandui:itemHeight="85dp"
+        rockandui:itemHorizontalSpacing="5dp"
+        rockandui:itemVerticalSpacing="5dp"
+        rockandui:itemWidth="75dp" />
+
+</merge>

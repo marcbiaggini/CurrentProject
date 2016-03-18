@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="actionlist_anim_speed" type="integer">500</item> <!-- milliseconds -->
+    <item name="lineargridview_anim_speed" type="integer">300</item> <!-- milliseconds -->
+    <item name="swipeitem_anim_speed" type="integer">400</item> <!-- milliseconds -->
+</resources>

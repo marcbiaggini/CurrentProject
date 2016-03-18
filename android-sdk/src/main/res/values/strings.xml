@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="min_signal">40</string>
+    <string name="bmp_threshold">127</string>
+    <string name="manager_service_notification_text">Manager Service is running.</string>
+    <string name="manager_service_notification_title">Rockspoon Manager Service</string>
+    <string name="cache_service_notification_text">Cache Service is running.</string>
+    <string name="cache_service_notification_title">Rockspoon Cache Service</string>
+</resources>

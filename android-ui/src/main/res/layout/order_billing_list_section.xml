@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="40dp">
+
+    <TextView
+        android:id="@+id/section_text"
+        style="@style/rsTextBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textcolor_gray_disabled"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        tools:text="Food"
+        android:textStyle="italic" />
+</LinearLayout>

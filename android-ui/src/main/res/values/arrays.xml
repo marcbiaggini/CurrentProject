@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="security_type">
+        <item>None</item>
+        <item>WEP</item>
+        <item>WPA/WPA2</item>
+    </string-array>
+    <!-- Flags from https://github.com/behdad/region-flags/ -->
+    <!-- Each item is Prefix|CountryCode|CountryName -->
+    <string-array name="country_codes">
+        <!--<item>93|af|Afghanistan</item>-->
+        <!--<item>355|al|Albania</item>-->
+        <!--<item>213|dz|Algeria</item>-->
+        <!--<item>1684|as|American Samoa</item>-->
+        <!--<item>376|ad|Andorra</item>-->
+        <!--<item>244|ao|Angola</item>-->
+        <!--<item>1264|ai|Anguilla</item>-->
+        <!--<item>1268|ag|Antigua and Barbuda</item>-->
+        <!--<item>54|ar|Argentina</item>-->
+        <!--<item>374|am|Armenia</item>-->
+        <!--<item>297|aw|Aruba</item>-->
+        <!--<item>61|au|Australia</item>-->
+        <!--<item>43|at|Austria)</item>-->
+        <!--<item>994|az|Azerbaijan</item>-->
+        <!--<item>1242|bs|Bahamas</item>-->
+        <!--<item>973|bh|Bahrain</item>-->
+        <!--<item>880|bd|Bangladesh</item>-->
+        <!--<item>1246|bb|Barbados</item>-->
+        <!--<item>375|by|Belarus</item>-->
+        <!--<item>32|be|Belgium</item>-->
+        <!--<item>501|bz|Belize</item>-->
+        <!--<item>229|bj|Benin</item>-->
+        <!--<item>1441|bm|Bermuda</item>-->
+        <!--<item>975|bt|Bhutan</item>-->
+        <!--<item>591|bo|Bolivia</item>-->
+        <!--<item>387|ba|Bosnia and Herzegovina</item>-->
+        <!--<item>267|bw|Botswana</item>-->
+        <item>55|br|Brazil</item>
+        <!--<item>246|io|British Indian Ocean Territories</item>-->
+        <!--<item>1284|vg|British Virgin Islands</item>-->
+        <!--<item>673|bn|Brunei</item>-->
+        <!--<item>359|bg|Bulgaria</item>-->
+        <!--<item>226|bf|Burkina Faso</item>-->
+        <!--<item>257|bi|Burundi</item>-->
+        <!--<item>855|kh|Cambodia</item>-->
+        <!--<item>237|cm|Cameroon</item>-->
+        <!--<item>1|ca|Canada</item>-->
+        <!--<item>238|cv|Cape Verde</item>-->
+        <!--<item>599|bq|Caribbean Netherlands</item>-->
+        <!--<item>1345|ky|Cayman Islands</item>-->
+        <!--<item>236|cf|Central African Republic</item>-->
+        <!--<item>235|td|Chad</item>-->
+        <!--<item>56|cl|Chile</item>-->
+        <!--<item>86|cn|China</item>-->
+        <!--<item>57|co|Colombia</item>-->
+        <!--<item>269|km|Comoros</item>-->
+        <!--<item>243|cd|Congo (DRC)</item>-->
+        <!--<item>242|cg|Congo (Republic)</item>-->
+        <!--<item>682|ck|Cook Islands</item>-->
+        <!--<item>506|cr|Costa Rica</item>-->
+        <!--<item>225|ci|Côte d’Ivoire</item>-->
+        <!--<item>385|hr|Croatia</item>-->
+        <!--<item>53|cu|Cuba</item>-->
+        <!--<item>599|cw|Curaçao</item>-->
+        <!--<item>357|cy|Cyprus</item>-->
+        <!--<item>420|cz|Czech Republic</item>-->
+        <!--<item>45|dk|Denmark</item>-->
+        <!--<item>253|dj|Djibouti</item>-->
+        <!--<item>1767|dm|Dominica</item>-->
+        <!--<item>1|do|Dominican Republic</item>-->
+        <!--<item>593|ec|Ecuador</item>-->
+        <!--<item>20|eg|Egypt</item>-->
+        <!--<item>503|sv|El Salvador</item>-->
+        <!--<item>240|gq|Equatorial Guinea</item>-->
+        <!--<item>291|er|Eritrea</item>-->
+        <!--<item>372|ee|Estonia</item>-->
+        <!--<item>251|et|Ethiopia</item>-->
+        <!--<item>500|fk|Falkland Islands</item>-->
+        <!--<item>298|fo|Faroe Islands</item>-->
+        <!--<item>679|fj|Fiji</item>-->
+        <!--<item>358|fi|Finland</item>-->
+        <!--<item>33|fr|France</item>-->
+        <!--<item>594|gf|French Guiana</item>-->
+        <!--<item>689|pf|French Polynesia</item>-->
+        <!--<item>241|ga|Gabon</item>-->
+        <!--<item>220|gm|Gambia</item>-->
+        <!--<item>995|ge|Georgia</item>-->
+        <!--<item>49|de|Germany</item>-->
+        <!--<item>233|gh|Ghana</item>-->
+        <!--<item>350|gi|Gibraltar</item>-->
+        <!--<item>30|gr|Greece</item>-->
+        <!--<item>299|gl|Greenland</item>-->
+        <!--<item>1473|gd|Grenada</item>-->
+        <!--<item>590|gp|Guadeloupe</item>-->
+        <!--<item>1671|gu|Guam</item>-->
+        <!--<item>502|gt|Guatemala</item>-->
+        <!--<item>224|gn|Guinea</item>-->
+        <!--<item>245|gw|Guinea-Bissau</item>-->
+        <!--<item>592|gy|Guyana</item>-->
+        <!--<item>509|ht|Haiti</item>-->
+        <!--<item>504|hn|Honduras</item>-->
+        <!--<item>852|hk|Hong Kong</item>-->
+        <!--<item>36|hu|Hungary</item>-->
+        <!--<item>354|is|Iceland</item>-->
+        <!--<item>91|in|India</item>-->
+        <!--<item>62|id|Indonesia</item>-->
+        <!--<item>98|ir|Iran</item>-->
+        <!--<item>964|iq|Iraq</item>-->
+        <!--<item>353|ie|Ireland</item>-->
+        <!--<item>972|il|Israel</item>-->
+        <!--<item>39|it|Italy</item>-->
+        <!--<item>1876|jm|Jamaica</item>-->
+        <!--<item>81|jp|Japan</item>-->
+        <!--<item>962|jo|Jordan</item>-->
+        <!--<item>7|kz|Kazakhstan</item>-->
+        <!--<item>254|ke|Kenya</item>-->
+        <!--<item>686|ki|Kiribati</item>-->
+        <!--<item>965|kw|Kuwait</item>-->
+        <!--<item>996|kg|Kyrgyzstan</item>-->
+        <!--<item>856|la|Laos</item>-->
+        <!--<item>371|lv|Latvia</item>-->
+        <!--<item>961|lb|Lebanon</item>-->
+        <!--<item>266|ls|Lesotho</item>-->
+        <!--<item>231|lr|Liberia</item>-->
+        <!--<item>218|ly|Libya</item>-->
+        <!--<item>423|li|Liechtenstein</item>-->
+        <!--<item>370|lt|Lithuania</item>-->
+        <!--<item>352|lu|Luxembourg</item>-->
+        <!--<item>853|mo|Macau</item>-->
+        <!--<item>389|mk|Macedonia</item>-->
+        <!--<item>261|mg|Madagascar</item>-->
+        <!--<item>265|mw|Malawi</item>-->
+        <!--<item>60|my|Malaysia</item>-->
+        <!--<item>960|mv|Maldives</item>-->
+        <!--<item>223|ml|Mali</item>-->
+        <!--<item>356|mt|Malta</item>-->
+        <!--<item>692|mh|Marshall Islands</item>-->
+        <!--<item>596|mq|Martinique</item>-->
+        <!--<item>222|mr|Mauritania</item>-->
+        <!--<item>230|mu|Mauritius</item>-->
+        <!--<item>52|mx|Mexico</item>-->
+        <!--<item>691|fm|Micronesia</item>-->
+        <!--<item>373|md|Moldova</item>-->
+        <!--<item>377|mc|Monaco</item>-->
+        <!--<item>976|mn|Mongolia</item>-->
+        <!--<item>382|me|Montenegro</item>-->
+        <!--<item>1664|ms|Montserrat</item>-->
+        <!--<item>212|ma|Morocco</item>-->
+        <!--<item>258|mz|Mozambique</item>-->
+        <!--<item>95|mm|Myanmar</item>-->
+        <!--<item>264|na|Namibia</item>-->
+        <!--<item>674|nr|Nauru</item>-->
+        <!--<item>977|np|Nepal</item>-->
+        <!--<item>31|nl|Netherlands</item>-->
+        <!--<item>687|nc|New Caledonia</item>-->
+        <!--<item>64|nz|New Zealand</item>-->
+        <!--<item>505|ni|Nicaragua</item>-->
+        <!--<item>227|ne|Niger</item>-->
+        <!--<item>234|ng|Nigeria</item>-->
+        <!--<item>683|nu|Niue</item>-->
+        <!--<item>672|nf|Norfolk Island</item>-->
+        <!--<item>850|kp|North Korea</item>-->
+        <!--<item>1670|mp|Northern Mariana Islands</item>-->
+        <!--<item>47|no|Norway</item>-->
+        <!--<item>968|om|Oman</item>-->
+        <!--<item>92|pk|Pakistan</item>-->
+        <!--<item>680|pw|Palau</item>-->
+        <!--<item>970|ps|Palestin</item>-->
+        <!--<item>507|pa|Panama</item>-->
+        <!--<item>675|pg|Papua New Guinea</item>-->
+        <!--<item>595|py|Paraguay</item>-->
+        <!--<item>51|pe|Peru</item>-->
+        <!--<item>63|ph|Philippines</item>-->
+        <!--<item>48|pl|Poland</item>-->
+        <!--<item>351|pt|Portugal</item>-->
+        <!--<item>1|pr|Puerto Rico</item>-->
+        <!--<item>974|qa|Qatar</item>-->
+        <!--<item>262|re|Réunion</item>-->
+        <!--<item>40|ro|Romania</item>-->
+        <!--<item>7|ru|Russia</item>-->
+        <!--<item>250|rw|Rwanda</item>-->
+        <!--<item>590|bl|Saint Barthélemy</item>-->
+        <!--<item>290|sh|Saint Helena</item>-->
+        <!--<item>1869|kn|Saint Kitts and Nevis</item>-->
+        <!--<item>1758|lc|Saint Lucia</item>-->
+        <!--<item>590|mf|Saint Martin</item>-->
+        <!--<item>508|pm|Saint Pierre and Miquelon</item>-->
+        <!--<item>1784|vc|Saint Vincent and the Grenadines</item>-->
+        <!--<item>685|ws|Samoa</item>-->
+        <!--<item>378|sm|San Marino</item>-->
+        <!--<item>239|st|São Tome and Principe</item>-->
+        <!--<item>966|sa|Saudi Arabia</item>-->
+        <!--<item>221|sn|Senegal</item>-->
+        <!--<item>381|rs|Serbia</item>-->
+        <!--<item>248|sc|Seychelles</item>-->
+        <!--<item>232|sl|Sierra Leone</item>-->
+        <!--<item>65|sg|Singapore</item>-->
+        <!--<item>1721|sx|Sint Maarten</item>-->
+        <!--<item>421|sk|Slovakia</item>-->
+        <!--<item>386|si|Slovenia</item>-->
+        <!--<item>677|sb|Solomon Islands</item>-->
+        <!--<item>252|so|Somalia</item>-->
+        <!--<item>27|za|South Africa</item>-->
+        <!--<item>82|kr|South Korea</item>-->
+        <!--<item>211|ss|South Sudan</item>-->
+        <!--<item>34|es|Spain</item>-->
+        <!--<item>94|lk|Sri Lanka</item>-->
+        <!--<item>249|sd|Sudan</item>-->
+        <!--<item>597|sr|Suriname</item>-->
+        <!--<item>268|sz|Swaziland</item>-->
+        <!--<item>46|se|Sweden</item>-->
+        <!--<item>41|ch|Switzerland</item>-->
+        <!--<item>963|sy|Syria</item>-->
+        <!--<item>886|tw|Taiwan</item>-->
+        <!--<item>992|tj|Tajikistan</item>-->
+        <!--<item>255|tz|Tanzania</item>-->
+        <!--<item>66|th|Thailand</item>-->
+        <!--<item>670|tl|Timor-Leste</item>-->
+        <!--<item>228|tg|Togo</item>-->
+        <!--<item>690|tk|Tokelau</item>-->
+        <!--<item>676|to|Tonga</item>-->
+        <!--<item>1868|tt|Trinidad and Tobago</item>-->
+        <!--<item>216|tn|Tunisia</item>-->
+        <!--<item>90|tr|Turkey</item>-->
+        <!--<item>993|tm|Turkmenistan</item>-->
+        <!--<item>1649|tc|Turks and Caicos Islands</item>-->
+        <!--<item>688|tv|Tuvalu</item>-->
+        <!--<item>1340|vi|U.S. Virgin Islands</item>-->
+        <!--<item>256|ug|Uganda</item>-->
+        <!--<item>380|ua|Ukraine</item>-->
+        <!--<item>971|ae|United Arab Emirates</item>-->
+        <!--<item>44|gb|United Kingdom</item>-->
+        <item>1|us|United States</item>
+        <!--<item>598|uy|Uruguay</item>-->
+        <!--<item>998|uz|Uzbekistan</item>-->
+        <!--<item>678|vu|Vanuatu</item>-->
+        <!--<item>39|va|Vatican City</item>-->
+        <!--<item>58|ve|Venezuela</item>-->
+        <!--<item>84|vn|Vietnam</item>-->
+        <!--<item>681|wf|Wallis and Futuna</item>-->
+        <!--<item>967|ye|Yemen</item>-->
+        <!--<item>260|zm|Zambia</item>-->
+        <!--<item>263|zw|Zimbabwe</item>-->
+    </string-array>
+</resources>

@@ -1,0 +1,1 @@
+int string debugMode 0x7f020000

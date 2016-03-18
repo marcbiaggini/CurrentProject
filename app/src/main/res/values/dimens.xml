@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="separator_height_big">5dp</dimen>
+    <dimen name="edit_text_height">48dp</dimen>
+    <dimen name="country_flag_width">80dp</dimen>
+    <dimen name="country_phone_code_width">100dp</dimen>
+    <dimen name="phone_number_width">200dp</dimen>
+    <dimen name="email_address_width">390dp</dimen>
+    <dimen name="filter_preview_size">80dp</dimen>
+</resources>

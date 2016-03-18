@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="48dp"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             android:background="@drawable/border_background">
+
+    <CheckBox
+        android:id="@+id/order_select_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="4dp"
+        android:text="Select All"
+        android:textColor="#C8C8C8"/>
+
+</FrameLayout>

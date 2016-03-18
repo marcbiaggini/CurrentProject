@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:height="10dp"
+        android:gravity="top">
+        <bitmap
+            android:gravity="top"
+            android:src="@drawable/serrilhado"/>
+    </item>
+
+    <item
+        android:height="0dp"
+        android:bottom="6dp"
+        android:top="6dp"
+        android:left="10dp"
+        android:right="10dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/textcolor_greenprice"/>
+
+        </shape>
+    </item>
+
+    <item
+        android:height="10dp"
+        android:gravity="bottom">
+
+        <rotate xmlns:android="http://schemas.android.com/apk/res/android"
+                android:fromDegrees="180"
+                android:pivotX="50%"
+                android:pivotY="50%"
+                android:toDegrees="180">
+            <bitmap
+                android:gravity="bottom"
+                android:src="@drawable/serrilhado"/>
+        </rotate>
+    </item>
+
+</layer-list>

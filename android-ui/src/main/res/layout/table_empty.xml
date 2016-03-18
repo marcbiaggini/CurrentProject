@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/border_background"
+    android:minHeight="110dp"
+    android:orientation="horizontal">
+
+    <com.rockspoon.rockandui.Components.TableNameBarView
+        android:id="@+id/table_name_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/table_grid_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/table_empty_seats"
+            style="@style/rsTextBig"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="@string/format_num_seats_n"
+            android:textColor="@color/textcolor_lightblue" />
+
+    </LinearLayout>
+
+</LinearLayout>

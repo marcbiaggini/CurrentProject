@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Pixel Dimensions -->
+    <dimen name="overlapsize">8dp</dimen>
+    <dimen name="textsize_superlarge">28sp</dimen>
+    <dimen name="textsize_payment_tablet">24sp</dimen>
+    <dimen name="textsize_large">22sp</dimen>
+    <dimen name="textsize_enourmous">18sp</dimen>
+    <dimen name="textsize_big">16sp</dimen>
+    <dimen name="textsize">14sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="member_textsize">12sp</dimen>
+    <dimen name="category_button_size">86dp</dimen>
+    <dimen name="category_button_spacing">5dp</dimen>
+    <dimen name="food_item_spacing">10dp</dimen>
+    <dimen name="topbar_height">48dp</dimen>
+    <dimen name="dialog_topbar_size">60dp</dimen>
+    <dimen name="dialog_topbar_margin_bottom">15dp</dimen>
+    <dimen name="modifier_item_item_height">48dp</dimen>
+    <dimen name="modifier_item_item_padding">10dp</dimen>
+    <dimen name="actionlist_container_padding_bottom">150dp</dimen>
+    <dimen name="actionlist_item_spacing">10dp</dimen>
+    <dimen name="lineargridview_overlap">8dp</dimen>
+    <dimen name="initialsetup_margin">10dp</dimen>
+    <dimen name="facename_min_width">90dp</dimen>
+    <dimen name="facename_padding">5dp</dimen>
+    <dimen name="ordering_item_seat_padding">10dp</dimen>
+    <dimen name="badge_icon_size">48dp</dimen>
+    <dimen name="scrollable_offset">24dp</dimen>
+    <dimen name="order_cart_items_divider">24dp</dimen>
+    <dimen name="modifier_top_margin">8dp</dimen>
+
+    <!-- Dialog Dimensions -->
+    <dimen name="rsdialog_marginTop">30dp</dimen>
+    <dimen name="rsdialog_marginBottom">20dp</dimen>
+    <dimen name="rsdialog_marginStart">20dp</dimen>
+    <dimen name="rsdialog_marginEnd">20dp</dimen>
+    <item name="rsdialog_zero_position" type="dimen" format="fraction">0%p</item>
+    <item name="rsdialog_top_position" type="dimen" format="fraction">-100%p</item>
+    <item name="rsdialog_bottom_position" type="dimen" format="fraction">100%p</item>
+
+    <!-- Integer Sizes -->
+    <item name="member_text_maxsize" type="integer">10</item> <!-- Characters -->
+    <item name="facename_text_maxsize" type="integer">10</item> <!-- Characters -->
+    <item name="phonecountry_text_maxsize" type="integer">18</item> <!-- Characters -->
+    <item name="max_seats" type="integer">8</item>
+    <item name="badgetextview_overhead" type="integer">20</item> <!-- Pixels -->
+    <item name="swipelistener_min_distance" type="integer">120</item> <!-- Pixels -->
+    <item name="swipelistener_threshold_velocity" type="integer">1200</item>
+
+
+
+
+</resources>

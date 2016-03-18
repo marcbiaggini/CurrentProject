@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/food_count"
+        style="@style/rsLabelBig"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="start"/>
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_toEndOf="@id/food_count"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/food_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/food_title"
+            style="@style/rsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            tools:text="Food title"/>
+
+        <LinearLayout
+            android:id="@+id/price_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/split_item"
+            android:layout_below="@+id/food_title"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/food_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textSize="13sp"
+                tools:text="Food notes"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:text="@string/label_item_total"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/item_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp"
+                    tools:text="$80.00"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/split_item"
+            style="@style/rsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:text="@string/button_split_item"
+            android:textColor="@drawable/textcolor_button"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/paid_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_disabled"
+        android:visibility="gone"/>
+
+</RelativeLayout>

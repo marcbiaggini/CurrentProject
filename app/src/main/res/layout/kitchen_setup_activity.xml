@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:fancy="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal|bottom"
+            fancy:fb_text="@string/button_continue"
+            fancy:fb_borderColor="@color/background"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/button_selected"
+            fancy:fb_focusColor="@color/textcolor_lightblue_disabled"
+            fancy:fb_radius="10dp"/>
+    </FrameLayout>
+
+</RelativeLayout>

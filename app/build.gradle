@@ -1,0 +1,133 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: "maven"
+def AAVersion = '4.0-SNAPSHOT'
+
+
+apt {
+    arguments {
+        resourcePackageName android.defaultConfig.applicationId
+        androidManifestFile variant.outputs[0]?.processResources?.manifestFile
+    }
+}
+
+configurations {
+    deployerJars
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId 'com.rockspoon.rockpos'
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.1"
+        //Instrumentation Test Runner
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+    signingConfigs {
+        debug {
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    output.outputFile = new File(
+                            output.outputFile.parent,
+                            "rockspoon-pos-${variant.versionName}-SNAPSHOT.apk"
+                    )
+                }
+            }
+        }
+        release {
+            storeFile file("rockspoon.keystore")
+            storePassword System.getenv("KSTOREPWD")
+            keyAlias "rockspoon-pos"
+            keyPassword System.getenv("KEYPWD")
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    output.outputFile = new File(
+                            output.outputFile.parent,
+                            "rockspoon-pos-${variant.versionName}.${System.getenv("BUILD_NUMBER")}.apk"
+                    )
+                }
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField "String", "BUILD_VERSION", "\"" + System.getenv("BUILD_NUMBER") + "\""
+            buildConfigField "String", "API_URL", System.getenv("RSAPIURL") ? "\"" + System.getenv("RSAPIURL") + "\"" : "\"https://api.rockspoon.com/rockspoon\""
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+            buildConfigField "String", "BUILD_VERSION", "\"" + "SNAPSHOT" + "\""
+            buildConfigField "String", "API_URL", System.getenv("RSAPIURL") ? "\"" + System.getenv("RSAPIURL") + "\"" : "\"https://api.rockspoon.com/rockspoon\""
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+}
+
+
+
+group = "com.rockspoon"
+version = android.defaultConfig.versionName + ".${System.getenv("BUILD_NUMBER")}"
+
+retrolambda {
+    javaVersion JavaVersion.VERSION_1_7
+    defaultMethods false
+    incremental true
+}
+
+dependencies {
+    compile project(':android-ui')
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    deployerJars "org.apache.maven.wagon:wagon-ftp:2.10"
+
+    //Testing Dependencies Espresso
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    androidTestCompile 'com.android.support.test:runner:0.4.1'
+
+    androidTestCompile 'com.android.support:support-annotations:23.2.0'
+
+    // IdlingResource is used in the app under test
+    androidTestCompile 'com.android.support.test.espresso:espresso-idling-resource:2.2.1'
+    // For CountingIdlingResource:
+    androidTestCompile 'com.android.support.test.espresso:espresso-contrib:2.2.1'
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        configuration = configurations.deployerJars
+        repository(url: System.getenv("RSMAVENFTP") ? System.getenv("RSMAVENFTP") : "ftp://maven.rockspoon.com") {
+            authentication(userName: "maven", password: "gGyNqsXS")
+        }
+    }
+}
+

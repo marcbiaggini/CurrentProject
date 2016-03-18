@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="110dp"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="5dp"
+              android:layout_marginTop="5dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/member_checkbox"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_weight="0.64"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/format_seat_n"-->
+        <!--android:textSize="@dimen/member_textsize" />-->
+        <!-- TODO: Try to use 0dp on CheckBox Width, android studio recommends because performance -->
+        <TextView
+            android:id="@+id/member_seat_text"
+            style="@style/rsText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.64"
+            android:gravity="center"
+            android:text="@string/format_seat_n" />
+
+    </LinearLayout>
+
+    <view
+        android:id="@+id/member_image"
+        class="com.rockspoon.rockandui.Components.RoundImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:src="@drawable/thumbnail" />
+
+    <TextView
+        android:id="@+id/member_name"
+        style="@style/rsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLength="7"
+        android:singleLine="true"
+        android:text="@string/placeholder_login_username"
+        android:textColor="@color/textcolor_lightblue"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>

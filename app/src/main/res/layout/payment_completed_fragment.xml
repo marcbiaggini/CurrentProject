@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="70dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/rockspoon_logo"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/rsTextLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/message_your_payment_is_done"
+                android:textColor="@color/textcolor_black"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/select_enable"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/rsTextBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/message_you_will_receive_your_change"
+            android:textColor="@color/textcolor"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="20dp"
+            android:background="@color/bordercolor"/>
+
+        <TextView
+            style="@style/rsTextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/download_our_app"
+            android:textColor="@color/textcolor_black"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/rsTextBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/order_and_pay_with_phone"
+            android:textColor="@color/textcolor"/>
+
+        <Button
+            android:id="@+id/send_link_button"
+            style="@style/rsButtonInverted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/textsize_enourmous"
+            android:text="@string/button_send_me_app_link"/>
+
+        <Button
+            android:id="@+id/no_send_link_button"
+            style="@style/rsButtonInverted"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"
+            android:textSize="@dimen/textsize_enourmous"
+            android:text="@string/button_no_thanks"/>
+
+    </LinearLayout>
+</ScrollView>

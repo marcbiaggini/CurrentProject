@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <org.lucasr.twowayview.widget.TwoWayView
+        android:id="@+id/floor_plans_headers"
+        style="@style/FloorPlanControllerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        app:twowayview_layoutManager="ListLayoutManager"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/rsflatbutton_shape_selected"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                                                           android:id="@+id/floor_plan_segmented"
+                                                           android:layout_width="255dp"
+                                                           android:layout_height="wrap_content"
+                                                           android:layout_marginBottom="10dp"
+                                                           android:layout_marginLeft="10dp"
+                                                           android:layout_marginRight="10dp"
+                                                           android:layout_marginTop="15dp"
+                                                           android:orientation="horizontal"
+                                                           segmentedgroup:sc_border_width="2dp"
+                                                           segmentedgroup:sc_checked_text_color="@color/white"
+                                                           segmentedgroup:sc_corner_radius="2dp"
+                                                           segmentedgroup:sc_tint_color="@color/textcolor_lightblue">
+
+                <RadioButton
+                    android:id="@+id/button_floor_plan"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:checked="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/floor_plan"
+                    android:textStyle="italic"/>
+
+                <RadioButton
+                    android:id="@+id/button_table_combinations"
+                    style="@style/RadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/table_combinations"
+                    android:textStyle="italic"/>
+            </info.hoang8f.android.segmented.SegmentedGroup>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/floor_plan_list"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:layoutManager="LinearLayoutManager"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/zoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/zoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+
+        <com.rockspoon.rockandui.Components.VScroll
+            android:id="@+id/vScroll"
+            android:overScrollMode="never"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.rockspoon.rockandui.Components.HScroll
+                android:id="@+id/hScroll"
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/background_grid">
+
+                    <com.rockspoon.rockandui.Components.DrawGridView
+                        android:id="@+id/circlesDrawingView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+                </FrameLayout>
+            </com.rockspoon.rockandui.Components.HScroll>
+        </com.rockspoon.rockandui.Components.VScroll>
+    </LinearLayout>
+</LinearLayout>

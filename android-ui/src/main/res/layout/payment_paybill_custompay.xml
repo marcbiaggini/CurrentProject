@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/order_subtotal" />
+
+            <TextView
+                android:id="@+id/payment_paybill_custompay_order_subtotal"
+                style="@style/rsText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/placeholder_order_subtotal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/rsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/tax" />
+
+            <TextView
+                android:id="@+id/payment_paybill_custompay_order_tax"
+                style="@style/rsText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/placeholder_order_tax" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/payment_paybill_separator1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bordercolor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/rsTextBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/order_total" />
+
+            <TextView
+                android:id="@+id/payment_paybill_custompay_order_total"
+                style="@style/rsTextBig"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/placeholder_order_total"
+                android:textColor="@color/textcolor_lightblue"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/payment_paybill_separator2"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bordercolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView32"
+            style="@style/rsTextBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="@string/number_of_payers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/payment_paybill_custompay_order_minusimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minus" />
+
+            <EditText
+                android:id="@+id/payment_paybill_custompay_order_npayers"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="@string/zero"
+                android:textSize="@dimen/textsize_big" />
+
+            <ImageView
+                android:id="@+id/payment_paybill_custompay_order_plusimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button14"
+            style="@style/rsPlainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/button_merge_bills" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/payment_paybill_separator3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/bordercolor" />
+
+    <include
+        layout="@layout/payment_paybill_payeritem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:id="@+id/payment_paybill_separator4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bordercolor" />
+
+    <include
+        layout="@layout/payment_paybill_payeritem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:id="@+id/payment_paybill_separator5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bordercolor" />
+
+    <include
+        layout="@layout/payment_paybill_payeritem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:id="@+id/payment_paybill_separator6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bordercolor" />
+
+    <include
+        layout="@layout/payment_paybill_payeritem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:id="@+id/payment_paybill_separator7"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bordercolor" />
+</LinearLayout>

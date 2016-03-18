@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_with_photos"
+            android:id="@+id/itemphotos_withphotos_btn"
+            android:layout_weight="1"
+            style="@style/rsButton"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_without_photos"
+            android:id="@+id/itemphotos_withoutphotos_btn"
+            android:layout_weight="1"
+            style="@style/rsButtonInverted"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/itemphotos_category_bar_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.rockspoon.rockandui.Components.LinearListView
+            android:id="@+id/itemphotos_category_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+
+    <com.rockspoon.rockandui.Components.LinearListView
+        android:id="@+id/itemphotos_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"/>
+</LinearLayout>

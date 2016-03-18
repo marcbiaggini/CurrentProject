@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <at.markushi.ui.CircleButton
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/userStatus"
+        app:cb_color="@color/timeline_running"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check-In"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/clockStatusUser"
+        style="@style/rsTextEnourmous"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:text="00:00"
+        android:id="@+id/clockHour"
+        android:layout_alignBottom="@+id/userStatus"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        style="@style/rsTextEnourmous"/>
+
+</RelativeLayout>

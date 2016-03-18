@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rockspoon.rockandui.Components.VerticalText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/rsText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:clickable="false"
+    android:gravity="center|bottom"
+    android:paddingBottom="8dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="15dp"
+    android:paddingTop="8dp"
+    android:text="@string/placeholder_table_name"
+    android:textColor="@color/white"
+    android:textStyle="bold" />

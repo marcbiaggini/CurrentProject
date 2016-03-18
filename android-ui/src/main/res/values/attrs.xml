@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Circle Progress Bar Component Attributes -->
+    <declare-styleable name="CircleProgressBar">
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="startingAngle" format="integer" />
+        <attr name="gradientStartingAngle" format="integer" />
+        <attr name="progressbarColor" format="color" />
+        <attr name="progressbarColorStart" format="color" />
+        <attr name="progressbarColorEnd" format="color" />
+        <attr name="progressBarThickness" format="dimension" />
+        <attr name="android:text"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+
+    <!-- Timeline Component Attributes -->
+    <declare-styleable name="Timeline">
+        <attr name="lineThickness" format="dimension" />
+    </declare-styleable>
+
+    <!-- LinearGridView Components Attributes -->
+    <declare-styleable name="LinearGridView">
+        <attr name="itemHorizontalSpacing" format="dimension"/>
+        <attr name="itemVerticalSpacing" format="dimension"/>
+        <attr name="itemWidth" format="dimension"/>
+        <attr name="itemHeight" format="dimension"/>
+        <attr name="editNumColumns" format="integer"/>
+    </declare-styleable>
+
+    <!-- Table Seated Component Attributes -->
+    <declare-styleable name="TableSeated">
+        <attr name="tableName" format="string"/>
+        <attr name="numSeats" format="integer"/>
+    </declare-styleable>
+
+    <!-- Vertical Text Component Attributes -->
+    <declare-styleable name="VerticalText">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- BadgeIcon Component Attributes -->
+    <declare-styleable name="BadgeIcon">
+        <attr name="count" format="integer" />
+        <attr name="imageSrc" format="reference"/>
+    </declare-styleable>
+
+    <!-- SwipeItem Component Attributes -->
+    <declare-styleable name="SwipeItem">
+        <attr name="baselayout" format="reference"/>
+    </declare-styleable>
+
+    <!-- FaceName Component Attributes -->
+    <declare-styleable name="FaceName">
+        <attr name="android:src"/>
+        <attr name="android:text"/>
+    </declare-styleable>
+
+    <!-- DualStateEditText Component Attributes -->
+    <declare-styleable name="DualStateEditText">
+        <attr name="read_only" format="boolean"/>
+    </declare-styleable>
+
+    <!-- ModifierItem Component Attributes -->
+    <declare-styleable name="ModifierItem">
+        <attr name="open" format="boolean"/>
+        <attr name="mandatory" format="boolean"/>
+        <attr name="headertitle" format="string"/>
+        <attr name="description1_enabled" format="boolean" />
+        <attr name="description2_enabled" format="boolean" />
+        <attr name="description1_text" format="string" />
+        <attr name="description2_text" format="string" />
+        <attr name="price_enabled" format="boolean"/>
+        <attr name="price" format="float"/>
+        <attr name="enabled" format="boolean"/>
+    </declare-styleable>
+
+    <!-- FlowLayout Component Attributes -->
+    <declare-styleable name="FlowLayout">
+        <attr name="android:orientation" />
+        <attr name="layoutDirection" format="enum">
+            <enum name="ltr" value="0" />
+            <enum name="rtl" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+        <attr name="weightDefault" format="float" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_weight" format="float" />
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+
+    <!-- BoardView Component Attributes -->
+    <declare-styleable name="BoardView">
+        <attr name="column_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TopBarView">
+        <attr name="topbarTitleEnabled" format="boolean"/>
+        <attr name="topbarBackEnabled" format="boolean"/>
+        <attr name="topbarActionEnabled" format="boolean"/>
+        <attr name="topbarDoneEnabled" format="boolean"/>
+    </declare-styleable>
+
+</resources>

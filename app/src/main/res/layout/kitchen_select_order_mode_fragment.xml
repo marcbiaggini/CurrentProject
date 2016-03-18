@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="@string/please_choose_inbox_or_in_progress_orders"
+        android:gravity="center_horizontal"
+        style="@style/rsTextPaymentTablet"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"
+        android:text="@string/if_you_select_inbox_make_sure_you_configure"
+        android:gravity="center_horizontal"
+        style="@style/rsTextEnourmous"/>
+
+    <RadioGroup
+        android:id="@+id/modes_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/inbox_button"
+            style="@style/rsToggleRoundButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/textsize_big"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/button_inbox"/>
+
+        <RadioButton
+            android:id="@+id/in_progress_button"
+            style="@style/rsToggleRoundButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="@dimen/textsize_big"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/button_in_progress"/>
+
+    </RadioGroup>
+
+</LinearLayout>

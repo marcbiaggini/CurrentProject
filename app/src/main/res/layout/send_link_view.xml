@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="70dp">
+
+    <TextView
+        style="@style/rsTextPaymentTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:padding="10dp"
+        android:text="@string/enter_your_mobile_number"
+        android:textColor="@color/textcolor_black"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/country_drop_down"
+            android:layout_width="@dimen/country_flag_width"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/border_black_background_transparent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/country_flag_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/country_br"/>
+
+            <ImageView
+                android:id="@+id/arrow_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_arrow_drop_down"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/country_prefix"
+            style="@style/rsTextPaymentTablet"
+            android:layout_width="@dimen/country_phone_code_width"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/border_black_background_transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/phobe_number"
+            style="@style/rsTextPaymentTablet"
+            android:layout_width="@dimen/phone_number_width"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/border_black_background_transparent"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/bordercolor"/>
+
+        <TextView
+            style="@style/rsTextPaymentTablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="or"
+            android:textColor="@color/textcolor_black"/>
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/rsTextPaymentTablet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/enter_your_email_address"
+        android:textColor="@color/textcolor_black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/email_address"
+        style="@style/rsTextPaymentTablet"
+        android:layout_width="@dimen/email_address_width"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/border_black_background_transparent"
+        android:ellipsize="end"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/send_link_button"
+        style="@style/rsButtonInverted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:text="@string/button_send"
+        android:textSize="@dimen/textsize_payment_tablet"/>
+
+    <Button
+        android:id="@+id/cancel_button"
+        style="@style/rsButtonInverted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/button_cancel"
+        android:textSize="@dimen/textsize_payment_tablet"/>
+
+</LinearLayout>

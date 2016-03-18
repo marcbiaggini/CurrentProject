@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#78000000"
+              android:clickable="true"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/dialog_simple_waiting_title"
+            style="@style/rsTextEnourmous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/message_please_wait"
+            android:textColor="@color/white"/>
+
+    <ProgressBar
+            android:id="@+id/dialog_simple_waiting_progressbar"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:indeterminate="true"
+            android:max="100"
+            android:progress="0"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rockspoon.rockandui.Components.RatioFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mixed_modifier_rectangle_selector"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/option_name"
+        android:layout_width="match_parent"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/textcolor_lightblue_selection"
+        android:duplicateParentState="true"
+        android:textSize="13sp"/>
+
+</com.rockspoon.rockandui.Components.RatioFrameLayout>

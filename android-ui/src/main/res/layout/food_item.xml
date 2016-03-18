@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/border_background"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+
+    <ImageView android:id="@+id/item_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/food_item_name"
+        style="@style/rsTextEnourmous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/item_logo"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/food_item_price"
+        android:padding="2dp"
+        android:text="@string/placeholder_item_name"
+        android:textIsSelectable="false"
+        android:textStyle="bold"/>
+
+    <RatingBar
+        android:id="@+id/food_item_rating"
+        style="@style/rsRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_item_name"
+        android:layout_alignLeft="@+id/food_item_name"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3.5"/>
+
+    <ImageView
+        android:id="@+id/food_item_arrowbtn"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_right"/>
+
+    <TextView
+        android:id="@+id/food_item_price"
+        style="@style/rsTextEnourmous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/food_item_rating"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignBaseline="@+id/food_item_name"
+        android:text="@string/placeholder_average_ticket"
+        android:textColor="#0E7F19"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/food_item_items"
+        style="@style/rsText"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_item_rating"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignLeft="@+id/food_item_name"
+        android:layout_toStartOf="@id/food_item_arrowbtn"
+        android:text="@string/placeholder_item_components"/>
+
+    <TextView
+        android:id="@+id/food_item_tags"
+        style="@style/rsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/food_item_items"
+        android:layout_below="@+id/food_item_items"
+        android:layout_marginEnd="5dp"
+        android:padding="2dp"
+        android:text="@string/placeholder_tags"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/food_item_unavailable_message"
+        style="@style/rsTextEnourmous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/food_item_tags"
+        android:layout_marginTop="5dp"
+        android:text="@string/placeholder_food_unavailable_message"
+        android:textColor="@color/textcolor_orange"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</RelativeLayout>
